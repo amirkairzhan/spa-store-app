@@ -1,0 +1,20 @@
+body {
+  background-color: #596174;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.header {
+  height: 80px;
+  background-color: #1d1b33;
+}
+
+.head__title {
+  font-size: 50px;
+  line-height: 80px;
+  text-align: center;
+  color: #f9f9f9;
+}
