@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-22.04 # Указываем конкретную версию Ubuntu
+    runs-on: ubuntu-24.04 # Указываем конкретную версию Ubuntu
 
     steps:
       - name: Checkout repo
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18 # Укажите версию Node.js, которая совместима с вашим проектом
+          node-version: 22.11.0 # Укажите версию Node.js, которая совместима с вашим проектом
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
@@ -34,7 +34,7 @@ jobs:
   deploy:
     name: Deploy
     needs: build
-    runs-on: ubuntu-22.04 # Указываем ту же версию Ubuntu
+    runs-on: ubuntu-24.04 # Указываем ту же версию Ubuntu
 
     steps:
       - name: Download artifact
