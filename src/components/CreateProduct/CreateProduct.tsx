@@ -72,7 +72,7 @@ const CreateProduct = () => {
 
   return (
     <div className="container mt-5 w-50">
-      <h1 className="mb-4 text-light">Создать новый продукт</h1>
+      <h1 className="mb-4 text-light">Create New Product</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="title" className="form-label text-light">
